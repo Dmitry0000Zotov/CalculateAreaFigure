@@ -1,0 +1,56 @@
+﻿@page
+@model CalculateAreaFigure.Pages.TraingleAreaModel
+@{
+    Layout = "_Layout";
+}
+<div class="container">
+    <h1 class="fs-3">Calculate Triangle Area</h1>
+    <form method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="fs-5">Enter data:</h1>
+                    <div class="input-group mb-3 w-50">
+                        <span class="input-group-text" id="basic-addon1">Side#1</span>
+                        <input type="number" name="side1" class="form-control" placeholder="Length" aria-label="Side#1 length" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3 w-50">
+                        <span class="input-group-text" id="basic-addon1">Side#2</span>
+                        <input type="number" name="side2" class="form-control" placeholder="Length" aria-label="Side#2 length" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3 w-50">
+                        <span class="input-group-text" id="basic-addon1">Side#3</span>
+                        <input type="number" name="side3" class="form-control" placeholder="Length" aria-label="Side#3 length" aria-describedby="basic-addon1">
+                    </div>
+                    <input class="btn btn-outline-success" type="submit" value="Submit"></input>
+                </div>  
+                <div class="col">
+                    @if (Model.TriangleArea != 0)
+                    {
+                        <div class="container">
+                            <h1 class="fs-5">Calculated triangle area: @Model.TriangleArea</h1>
+                        </div>
+                        @if (Model.IsRight)
+                        {
+                            <div class="container">
+                                <h1 class="fs-5">This is right triangle</h1>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="container">
+                                <h1 class="fs-5">This is not right triangle</h1>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="container text-danger">
+                            <h1 class="fs-5">@Model.Message</h1>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
