@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{F223C792-D982-4C9E-83BB-F81B7137DD21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{1000ABB5-D41D-40C5-85A2-0C3301AECE9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculateAreaFigure.Api", "CalculateAreaFigure.Api\CalculateAreaFigure.Api.csproj", "{C4FC5BDB-B98C-4F8C-84A6-16244760E19F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculateAreaFigure.Library", "CalculateAreaFigure.Library\CalculateAreaFigure.Library.csproj", "{9BDD6D3C-9D67-472F-948B-95680B6B6563}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E254C32A-C79D-4E00-8316-DE2C84AF2D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateAreaFigure.Tests", "CalculateAreaFigure.Tests\CalculateAreaFigure.Tests.csproj", "{1B5B0FD7-1F24-4CAD-BD04-8DCF0B5F9DF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4FC5BDB-B98C-4F8C-84A6-16244760E19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FC5BDB-B98C-4F8C-84A6-16244760E19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FC5BDB-B98C-4F8C-84A6-16244760E19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FC5BDB-B98C-4F8C-84A6-16244760E19F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDD6D3C-9D67-472F-948B-95680B6B6563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDD6D3C-9D67-472F-948B-95680B6B6563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDD6D3C-9D67-472F-948B-95680B6B6563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDD6D3C-9D67-472F-948B-95680B6B6563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B5B0FD7-1F24-4CAD-BD04-8DCF0B5F9DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5B0FD7-1F24-4CAD-BD04-8DCF0B5F9DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5B0FD7-1F24-4CAD-BD04-8DCF0B5F9DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5B0FD7-1F24-4CAD-BD04-8DCF0B5F9DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4FC5BDB-B98C-4F8C-84A6-16244760E19F} = {1000ABB5-D41D-40C5-85A2-0C3301AECE9F}
+		{9BDD6D3C-9D67-472F-948B-95680B6B6563} = {F223C792-D982-4C9E-83BB-F81B7137DD21}
+		{1B5B0FD7-1F24-4CAD-BD04-8DCF0B5F9DF5} = {E254C32A-C79D-4E00-8316-DE2C84AF2D63}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C1DAB58-1A8B-4310-A28E-476EB4297C8C}
+	EndGlobalSection
+EndGlobal
